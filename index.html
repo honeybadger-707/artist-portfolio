@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="藝術家個人作品集：錄像、遊戲藝術與裝置。">
+  <title>Artist Name — Selected Works</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top">ARTIST NAME<span>®</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav">MENU</button>
+    <nav id="site-nav" class="site-nav" aria-label="主要導覽">
+      <a href="#works">WORKS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="intro">
+      <p class="eyebrow">ARTIST PORTFOLIO / 2026</p>
+      <h1>Selected<br><em>Works</em></h1>
+      <div class="intro-bottom">
+        <p>Video · Game Art · Installation<br>Based in Taiwan</p>
+        <p class="intro-note">作品、研究與實驗<br>Selected works and ongoing research.</p>
+      </div>
+    </section>
+
+    <section class="works section" id="works">
+      <div class="section-heading">
+        <h2>Works</h2>
+        <p>SELECTED PROJECTS / 01—03</p>
+      </div>
+      <div class="work-grid" id="work-grid">
+        <article class="work-card">
+          <button class="work-image image-one" data-work="0" aria-label="查看作品 Electronic Zoo">
+            <span class="image-label">VIDEO INSTALLATION</span>
+            <span class="image-number">01</span>
+          </button>
+          <div class="work-meta">
+            <div><h3>Electronic Zoo</h3><p>錄像裝置 / Video Installation</p></div>
+            <span>2025</span>
+          </div>
+        </article>
+        <article class="work-card">
+          <button class="work-image image-two" data-work="1" aria-label="查看作品 The Cybernetic Interpreter">
+            <span class="image-label">GAME ART</span>
+            <span class="image-number">02</span>
+          </button>
+          <div class="work-meta">
+            <div><h3>The Cybernetic Interpreter</h3><p>遊戲藝術 / Game Art</p></div>
+            <span>2024</span>
+          </div>
+        </article>
+        <article class="work-card">
+          <button class="work-image image-three" data-work="2" aria-label="查看作品 Shot">
+            <span class="image-label">MOVING IMAGE</span>
+            <span class="image-number">03</span>
+          </button>
+          <div class="work-meta">
+            <div><h3>Shot</h3><p>單頻道錄像 / Single-channel Video</p></div>
+            <span>2023</span>
+          </div>
+        </article>
+      </div>
+      <p class="edit-note">這是示範內容。請把作品名稱、年份與圖片換成你自己的資料。</p>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-heading"><h2>About</h2><p>ARTIST STATEMENT</p></div>
+      <div class="about-content">
+        <p class="about-lead">我以影像、遊戲與裝置作為創作媒介，探索數位系統如何形塑觀看、敘事與經驗。</p>
+        <div>
+          <p>在這裡放入你的藝術家簡介與創作自述。可以介紹你如何使用遊戲作為創作材料、如何處理影像與規則，以及作品關注的議題。</p>
+          <p>建議先寫 100–200 字；之後可以再加入中文與英文版本。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cv section" id="cv">
+      <div class="section-heading"><h2>CV</h2><p>SELECTED BIOGRAPHY</p></div>
+      <div class="cv-list">
+        <div class="cv-row"><span>2026</span><p>個展／聯展名稱，展覽空間，城市</p><span>EXHIBITION</span></div>
+        <div class="cv-row"><span>2025</span><p>獎項、補助或藝術家計畫</p><span>AWARD / GRANT</span></div>
+        <div class="cv-row"><span>2024</span><p>學位或重要研究計畫</p><span>EDUCATION</span></div>
+      </div>
+      <p class="edit-note">請替換成真實經歷；沒有的項目可以直接刪除。</p>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-heading"><h2>Contact</h2><p>GET IN TOUCH</p></div>
+      <p>For exhibitions, collaborations and inquiries.</p>
+      <a class="email-link" href="mailto:your-email@example.com">your-email@example.com ↗</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> ARTIST NAME</span>
+    <a href="#top">BACK TO TOP ↑</a>
+  </footer>
+
+  <dialog id="work-dialog" class="work-dialog">
+    <button class="dialog-close" id="dialog-close" aria-label="關閉作品視窗">CLOSE ×</button>
+    <p class="eyebrow" id="dialog-category">PROJECT</p>
+    <h2 id="dialog-title">Work title</h2>
+    <p id="dialog-description">作品介紹會顯示在這裡。</p>
+    <p class="dialog-hint">你可以在 script.js 修改每件作品的介紹。</p>
+  </dialog>
+</body>
+</html>
